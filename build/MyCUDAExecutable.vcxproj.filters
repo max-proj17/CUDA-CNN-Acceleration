@@ -4,6 +4,15 @@
     <ClCompile Include="C:\Users\maxfi\source\repos\CUDA-CNN\src\main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="C:\Users\maxfi\source\repos\CUDA-CNN\src\Net.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxfi\source\repos\CUDA-CNN\src\Metrics.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\maxfi\source\repos\CUDA-CNN\src\Train.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <CudaCompile Include="..\cuda\kernel.cu">

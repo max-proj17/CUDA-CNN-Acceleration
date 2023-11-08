@@ -396,6 +396,9 @@ if %errorlevel% neq 0 goto :VCEnd</Command>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C:\Users\maxfi\source\repos\CUDA-CNN\src\main.cpp" />
+    <ClCompile Include="C:\Users\maxfi\source\repos\CUDA-CNN\src\Net.cpp" />
+    <ClCompile Include="C:\Users\maxfi\source\repos\CUDA-CNN\src\Metrics.cpp" />
+    <ClCompile Include="C:\Users\maxfi\source\repos\CUDA-CNN\src\Train.cpp" />
     <CudaCompile Include="..\cuda\kernel.cu" />
   </ItemGroup>
   <ItemGroup>

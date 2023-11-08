@@ -1,11 +1,10 @@
 {
   "ExpandedNodes": [
     "",
-    "\\build\\Release",
     "\\cuda",
     "\\include",
     "\\src"
   ],
-  "SelectedNode": "\\data",
+  "SelectedNode": "\\src\\Train.cpp",
   "PreviewInSolutionExplorer": false
 }
