@@ -15,7 +15,7 @@ include_directories(include)
 include_directories(${CUDA_INCLUDE_DIRS})
 include_directories(${TORCH_INCLUDE_DIRS})
 
-add_executable(MyCUDAExecutable src/main.cpp cuda/kernel.cu)
+add_executable(MyCUDAExecutable src/main.cpp src/Net.cpp src/Metrics.cpp src/Train.cpp cuda/kernel.cu)
 target_link_libraries(MyCUDAExecutable "${TORCH_LIBRARIES}" ${CUDA_LIBRARIES})
 
 # Set this 
