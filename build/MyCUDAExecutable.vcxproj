@@ -1,0 +1,413 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="16.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{CAF364BB-BFEC-3DDC-BB66-2CCEF158FEF5}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>MyCUDAExecutable</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v142</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.1.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxfi\source\repos\CUDA-CNN\build\Debug\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MyCUDAExecutable.dir\Debug\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">MyCUDAExecutable</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxfi\source\repos\CUDA-CNN\build\Release\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MyCUDAExecutable.dir\Release\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">MyCUDAExecutable</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='Release|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxfi\source\repos\CUDA-CNN\build\MinSizeRel\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MyCUDAExecutable.dir\MinSizeRel\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">MyCUDAExecutable</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">true</GenerateManifest>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxfi\source\repos\CUDA-CNN\build\RelWithDebInfo\</OutDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MyCUDAExecutable.dir\RelWithDebInfo\</IntDir>
+    <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">MyCUDAExecutable</TargetName>
+    <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.exe</TargetExt>
+    <LinkIncremental Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</LinkIncremental>
+    <GenerateManifest Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">true</GenerateManifest>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/include" /external:I "C:/Users/maxfi/Desktop/libtorch/include" /external:I "C:/Users/maxfi/Desktop/libtorch/include/torch/csrc/api/include" /external:I "C:/Program Files/NVIDIA Corporation/NvToolsExt/include" /external:I "C:/Program Files/NVIDIA Corporation/NvToolsExt//include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>Disabled</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>Disabled</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;ONNX_NAMESPACE=onnx_c2;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Debug"</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -gencode arch=compute_75,code=sm_75 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=set_but_not_used,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --Werror cross-execution-space-call --no-host-device-move-forward --expt-relaxed-constexpr --expt-extended-lambda -std=c++14 -Xcompiler="/EHsc -Zi -Ob0"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>Od</Optimization>
+      <Runtime>MTd</Runtime>
+      <RuntimeChecks>RTC1</RuntimeChecks>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\maxfi\Desktop\libtorch\lib\c10.lib;C:\Users\maxfi\Desktop\libtorch\lib\kineto.lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\\lib\x64\nvToolsExt64_1.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart_static.lib;C:\Users\maxfi\Desktop\libtorch\lib\caffe2_nvrtc.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart_static.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch_cuda.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch_cpu.lib;-INCLUDE:?warp_size@cuda@at@@YAHXZ;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart.lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\x64\nvToolsExt64_1.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cufft.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\curand.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cublasLt.lib;C:\Users\maxfi\Desktop\libtorch\lib\caffe2_nvrtc.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxfi/source/repos/CUDA-CNN/build/Debug/MyCUDAExecutable.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxfi/source/repos/CUDA-CNN/build/Debug/MyCUDAExecutable.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/include" /external:I "C:/Users/maxfi/Desktop/libtorch/include" /external:I "C:/Users/maxfi/Desktop/libtorch/include/torch/csrc/api/include" /external:I "C:/Program Files/NVIDIA Corporation/NvToolsExt/include" /external:I "C:/Program Files/NVIDIA Corporation/NvToolsExt//include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;ONNX_NAMESPACE=onnx_c2;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="Release"</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -gencode arch=compute_75,code=sm_75 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=set_but_not_used,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --Werror cross-execution-space-call --no-host-device-move-forward --expt-relaxed-constexpr --expt-extended-lambda -std=c++14 -Xcompiler="/EHsc -Ob2"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MT</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\maxfi\Desktop\libtorch\lib\c10.lib;C:\Users\maxfi\Desktop\libtorch\lib\kineto.lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\\lib\x64\nvToolsExt64_1.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart_static.lib;C:\Users\maxfi\Desktop\libtorch\lib\caffe2_nvrtc.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart_static.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch_cuda.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch_cpu.lib;-INCLUDE:?warp_size@cuda@at@@YAHXZ;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart.lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\x64\nvToolsExt64_1.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cufft.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\curand.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cublasLt.lib;C:\Users\maxfi\Desktop\libtorch\lib\caffe2_nvrtc.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxfi/source/repos/CUDA-CNN/build/Release/MyCUDAExecutable.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxfi/source/repos/CUDA-CNN/build/Release/MyCUDAExecutable.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/include" /external:I "C:/Users/maxfi/Desktop/libtorch/include" /external:I "C:/Users/maxfi/Desktop/libtorch/include/torch/csrc/api/include" /external:I "C:/Program Files/NVIDIA Corporation/NvToolsExt/include" /external:I "C:/Program Files/NVIDIA Corporation/NvToolsExt//include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MinSpace</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+      <DebugInformationFormat>
+      </DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;ONNX_NAMESPACE=onnx_c2;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="MinSizeRel"</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -gencode arch=compute_75,code=sm_75 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=set_but_not_used,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --Werror cross-execution-space-call --no-host-device-move-forward --expt-relaxed-constexpr --expt-extended-lambda -std=c++14 -Xcompiler="/EHsc -Ob1"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O1</Optimization>
+      <Runtime>MT</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\maxfi\Desktop\libtorch\lib\c10.lib;C:\Users\maxfi\Desktop\libtorch\lib\kineto.lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\\lib\x64\nvToolsExt64_1.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart_static.lib;C:\Users\maxfi\Desktop\libtorch\lib\caffe2_nvrtc.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart_static.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch_cuda.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch_cpu.lib;-INCLUDE:?warp_size@cuda@at@@YAHXZ;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart.lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\x64\nvToolsExt64_1.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cufft.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\curand.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cublasLt.lib;C:\Users\maxfi\Desktop\libtorch\lib\caffe2_nvrtc.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>false</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxfi/source/repos/CUDA-CNN/build/MinSizeRel/MyCUDAExecutable.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxfi/source/repos/CUDA-CNN/build/MinSizeRel/MyCUDAExecutable.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <ClCompile>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/include" /external:I "C:/Users/maxfi/Desktop/libtorch/include" /external:I "C:/Users/maxfi/Desktop/libtorch/include/torch/csrc/api/include" /external:I "C:/Program Files/NVIDIA Corporation/NvToolsExt/include" /external:I "C:/Program Files/NVIDIA Corporation/NvToolsExt//include" /bigobj</AdditionalOptions>
+      <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
+      <DebugInformationFormat>OldStyle</DebugInformationFormat>
+      <ExceptionHandling>Sync</ExceptionHandling>
+      <ExternalWarningLevel>TurnOffAllWarnings</ExternalWarningLevel>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <LanguageStandard>stdcpp14</LanguageStandard>
+      <Optimization>MaxSpeed</Optimization>
+      <PrecompiledHeader>NotUsing</PrecompiledHeader>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <UseFullPaths>false</UseFullPaths>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <ObjectFileName>$(IntDir)</ObjectFileName>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+    <CudaCompile>
+      <Include>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(Include)</Include>
+      <Defines>%(Defines);_WINDOWS;ONNX_NAMESPACE=onnx_c2;NDEBUG;USE_DISTRIBUTED;USE_C10D_GLOO;CMAKE_INTDIR="RelWithDebInfo"</Defines>
+      <AdditionalOptions>%(AdditionalOptions) -gencode arch=compute_75,code=sm_75 -Xcudafe --diag_suppress=cc_clobber_ignored,--diag_suppress=set_but_not_used,--diag_suppress=field_without_dll_interface,--diag_suppress=base_class_has_different_dll_interface,--diag_suppress=dll_interface_conflict_none_assumed,--diag_suppress=dll_interface_conflict_dllexport_assumed,--diag_suppress=bad_friend_decl --Werror cross-execution-space-call --no-host-device-move-forward --expt-relaxed-constexpr --expt-extended-lambda -std=c++14 -Xcompiler="/EHsc -Zi -Ob1"</AdditionalOptions>
+      <CodeGeneration></CodeGeneration>
+      <CompileOut>$(IntDir)%(Filename).obj</CompileOut>
+      <CudaRuntime>Static</CudaRuntime>
+      <GPUDebugInfo>false</GPUDebugInfo>
+      <Optimization>O2</Optimization>
+      <Runtime>MT</Runtime>
+      <TargetMachinePlatform>64</TargetMachinePlatform>
+      <TypeInfo>true</TypeInfo>
+      <UseHostInclude>false</UseHostInclude>
+    </CudaCompile>
+    <Midl>
+      <AdditionalIncludeDirectories>C:\Users\maxfi\source\repos\CUDA-CNN\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\include;C:\Users\maxfi\Desktop\libtorch\include;C:\Users\maxfi\Desktop\libtorch\include\torch\csrc\api\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\include;C:\Program Files\NVIDIA Corporation\NvToolsExt\\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+    <Link>
+      <AdditionalDependencies>C:\Users\maxfi\Desktop\libtorch\lib\c10.lib;C:\Users\maxfi\Desktop\libtorch\lib\kineto.lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\\lib\x64\nvToolsExt64_1.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart_static.lib;C:\Users\maxfi\Desktop\libtorch\lib\caffe2_nvrtc.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart_static.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch_cuda.lib;C:\Users\maxfi\Desktop\libtorch\lib\torch_cpu.lib;-INCLUDE:?warp_size@cuda@at@@YAHXZ;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cudart.lib;C:\Program Files\NVIDIA Corporation\NvToolsExt\lib\x64\nvToolsExt64_1.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cufft.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\curand.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cublas.lib;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v12.1\lib\x64\cublasLt.lib;C:\Users\maxfi\Desktop\libtorch\lib\caffe2_nvrtc.lib;C:\Users\maxfi\Desktop\libtorch\lib\c10_cuda.lib;cudadevrt.lib;cudart_static.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;comdlg32.lib;advapi32.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>/lib;/lib/$(Configuration);/lib/intel64;/lib/intel64/$(Configuration);/lib/intel64_win;/lib/intel64_win/$(Configuration);/lib/win-x64;/lib/win-x64/$(Configuration);C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/lib/x64;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.1/lib/x64/$(Configuration);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalOptions>%(AdditionalOptions) /machine:x64</AdditionalOptions>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <IgnoreSpecificDefaultLibraries>%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
+      <ImportLibrary>C:/Users/maxfi/source/repos/CUDA-CNN/build/RelWithDebInfo/MyCUDAExecutable.lib</ImportLibrary>
+      <ProgramDataBaseFile>C:/Users/maxfi/source/repos/CUDA-CNN/build/RelWithDebInfo/MyCUDAExecutable.pdb</ProgramDataBaseFile>
+      <SubSystem>Console</SubSystem>
+    </Link>
+    <ProjectReference>
+      <LinkLibraryDependencies>false</LinkLibraryDependencies>
+    </ProjectReference>
+    <CudaLink>
+      <AdditionalOptions>-forward-unknown-to-host-compiler -Wno-deprecated-gpu-targets </AdditionalOptions>
+      <PerformDeviceLink>false</PerformDeviceLink>
+    </CudaLink>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\maxfi\source\repos\CUDA-CNN\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/maxfi/source/repos/CUDA-CNN/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxfi/source/repos/CUDA-CNN -BC:/Users/maxfi/source/repos/CUDA-CNN/build --check-stamp-file C:/Users/maxfi/source/repos/CUDA-CNN/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\FindCUDAToolkit.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\FindCUDA.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\CMakeInitializeConfigs.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\select_compute_arch.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageHandleStandardArgs.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageMessage.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\cuda.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\mkl.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\utils.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Torch\TorchConfig.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeCUDACompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\detect_cuda_compute_capabilities.cu;C:\Users\maxfi\source\repos\CUDA-CNN\build\detect_cuda_version.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/maxfi/source/repos/CUDA-CNN/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxfi/source/repos/CUDA-CNN -BC:/Users/maxfi/source/repos/CUDA-CNN/build --check-stamp-file C:/Users/maxfi/source/repos/CUDA-CNN/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\FindCUDAToolkit.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\FindCUDA.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\CMakeInitializeConfigs.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\select_compute_arch.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageHandleStandardArgs.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageMessage.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\cuda.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\mkl.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\utils.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Torch\TorchConfig.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeCUDACompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\detect_cuda_compute_capabilities.cu;C:\Users\maxfi\source\repos\CUDA-CNN\build\detect_cuda_version.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/maxfi/source/repos/CUDA-CNN/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxfi/source/repos/CUDA-CNN -BC:/Users/maxfi/source/repos/CUDA-CNN/build --check-stamp-file C:/Users/maxfi/source/repos/CUDA-CNN/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\FindCUDAToolkit.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\FindCUDA.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\CMakeInitializeConfigs.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\select_compute_arch.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageHandleStandardArgs.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageMessage.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\cuda.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\mkl.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\utils.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Torch\TorchConfig.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeCUDACompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\detect_cuda_compute_capabilities.cu;C:\Users\maxfi\source\repos\CUDA-CNN\build\detect_cuda_version.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/maxfi/source/repos/CUDA-CNN/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/maxfi/source/repos/CUDA-CNN -BC:/Users/maxfi/source/repos/CUDA-CNN/build --check-stamp-file C:/Users/maxfi/source/repos/CUDA-CNN/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCUDAInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Compiler\NVIDIA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindCUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindCUDA\select_compute_arch.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageHandleStandardArgs.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\FindPackageMessage.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-Initialize.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows-NVIDIA-CUDA.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.28\Modules\Platform\WindowsPaths.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Config.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Targets-release.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Caffe2Targets.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\FindCUDAToolkit.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\FindCUDA.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\CMakeInitializeConfigs.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindCUDA\select_compute_arch.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageHandleStandardArgs.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\Modules_CUDA_fix\upstream\FindPackageMessage.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\cuda.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\mkl.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\mkldnn.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Caffe2\public\utils.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Torch\TorchConfig.cmake;C:\Users\maxfi\Desktop\libtorch\share\cmake\Torch\TorchConfigVersion.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeCUDACompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeCXXCompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeRCCompiler.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\3.28.0-rc4\CMakeSystem.cmake;C:\Users\maxfi\source\repos\CUDA-CNN\build\detect_cuda_compute_capabilities.cu;C:\Users\maxfi\source\repos\CUDA-CNN\build\detect_cuda_version.cc;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\maxfi\source\repos\CUDA-CNN\build\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="C:\Users\maxfi\source\repos\CUDA-CNN\src\main.cpp" />
+    <CudaCompile Include="..\cuda\kernel.cu" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="C:\Users\maxfi\source\repos\CUDA-CNN\build\ZERO_CHECK.vcxproj">
+      <Project>{466A93AE-771E-3519-8CCE-624AC43BDF9C}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+    <Import Project="$(VCTargetsPath)\BuildCustomizations\CUDA 12.1.targets" />
+  </ImportGroup>
+</Project>

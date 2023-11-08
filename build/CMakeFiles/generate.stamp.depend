@@ -1,0 +1,48 @@
+# CMake generation dependency list for this directory.
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCUDAInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCXXInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeCommonLanguageInclude.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeGenericSystem.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeRCInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInformation.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/CMakeSystemSpecificInitialize.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/CMakeCommonCompilerMacros.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA-CUDA.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Compiler/NVIDIA.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/FindCUDA.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/FindCUDA/select_compute_arch.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/FindPackageHandleStandardArgs.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/FindPackageMessage.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-Initialize.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC-CXX.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-MSVC.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows-NVIDIA-CUDA.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/Windows.cmake
+C:/Program Files/CMake/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/Caffe2Config.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/Caffe2Targets-release.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/Caffe2Targets.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/FindCUDAToolkit.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/FindCUDA.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/CMakeInitializeConfigs.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindCUDA/select_compute_arch.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageHandleStandardArgs.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/Modules_CUDA_fix/upstream/FindPackageMessage.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/public/cuda.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/public/mkl.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/public/mkldnn.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Caffe2/public/utils.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Torch/TorchConfig.cmake
+C:/Users/maxfi/Desktop/libtorch/share/cmake/Torch/TorchConfigVersion.cmake
+C:/Users/maxfi/source/repos/CUDA-CNN/CMakeLists.txt
+C:/Users/maxfi/source/repos/CUDA-CNN/build/CMakeFiles/3.28.0-rc4/CMakeCUDACompiler.cmake
+C:/Users/maxfi/source/repos/CUDA-CNN/build/CMakeFiles/3.28.0-rc4/CMakeCXXCompiler.cmake
+C:/Users/maxfi/source/repos/CUDA-CNN/build/CMakeFiles/3.28.0-rc4/CMakeRCCompiler.cmake
+C:/Users/maxfi/source/repos/CUDA-CNN/build/CMakeFiles/3.28.0-rc4/CMakeSystem.cmake
+C:/Users/maxfi/source/repos/CUDA-CNN/build/detect_cuda_compute_capabilities.cu
+C:/Users/maxfi/source/repos/CUDA-CNN/build/detect_cuda_version.cc
