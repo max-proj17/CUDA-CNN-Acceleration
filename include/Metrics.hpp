@@ -8,3 +8,5 @@ struct Metrics {
 	float f1_score;
 	// ... other metrics and functions to calculate them
 };
+
+Metrics calculateMetrics(const torch::Tensor& outputs, const torch::Tensor& targets);

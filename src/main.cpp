@@ -1,4 +1,6 @@
 #include <torch/torch.h>
+#include <torch/data/datasets/mnist.h>
+#include <torch/data/dataloader.h>
 #include "Net.hpp"
 #include "Train.hpp"
 #include "Metrics.hpp"
@@ -26,20 +28,23 @@ int main() {
     // Hyperparameters
     const int64_t batch_size = 64;
 
-    // MNIST dataset
-    auto data_loader = torch::data::make_data_loader(
-        torch::data::datasets::MNIST("./data").map(
-            torch::data::transforms::Normalize<>(0.1307, 0.3081)).map(
-                torch::data::transforms::Stack<>()),
-        batch_size);
+    auto train_dataset = torch::data::datasets::MNIST("./data")
+        .map(torch::data::transforms::Normalize<>(0.1307, 0.3081))
+        .map(torch::data::transforms::Stack<>());
 
-    // Define your model and optimizer here
+    // The return type of make_data_loader is a unique_ptr to a DataLoader
+    auto data_loader = torch::data::make_data_loader(
+        std::move(train_dataset),
+        torch::data::DataLoaderOptions().batch_size(batch_size).workers(2));
+
     Net model;
     model.to(device);
+
     torch::optim::Adam optimizer(model.parameters(), torch::optim::AdamOptions(1e-3));
 
-    // Call the train function
-    train(model, *data_loader, optimizer);
+    // Call the train function template with the correct DataLoader type
+    train<decltype(*data_loader)>(
+        model, *data_loader, optimizer, device);
 
     std::cout << "Training complete. Press ENTER to exit..." << std::endl;
     std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
